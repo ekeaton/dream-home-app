@@ -25,6 +25,7 @@ class App extends React.Component {
   return (
     <div className="App">
       <main>
+      <Switch>
       <Route
         exact path="/"
         component={HomePage} />
@@ -76,6 +77,7 @@ class App extends React.Component {
      <Route
         path="/basement"
         component={Basement}/>
+      </Switch>
       </main>
       <Footer />
     </div>
