@@ -1,13 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../DemoNav/DemoNav';
 import './room-sections.css'
+import DemoNav from '../DemoNav/DemoNav';
 
 
 class RoomSelections extends React.Component {
     render() {
         return (
             <>
+            <DemoNav/>
               <section>
                  <header>
                    <h2>Rooms</h2>

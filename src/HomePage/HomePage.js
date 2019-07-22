@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
+import MainNav from '../MainNav/MainNav';
 
 
 function HomePage() {
     return (
         <>
+        <MainNav/>
         <Header/>
         <section>
         <h3>Why DreamHome?</h3>

@@ -1,4 +1,5 @@
 import React from 'react';
+import DemoNav from '../DemoNav/DemoNav';
 import './add-vision.css'
 
 
@@ -6,6 +7,7 @@ class AddVision extends React.Component {
     render() {
         return (
             <>
+            <DemoNav/>
             <header>
               <h1>Add Vision</h1>
             </header>

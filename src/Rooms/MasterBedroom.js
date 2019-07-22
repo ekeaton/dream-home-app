@@ -1,11 +1,13 @@
 import React from 'react';
 import '../boardz.css'
+import DemoNav from '../DemoNav/DemoNav';
 
 
 class MasterBedroom extends React.Component {
     render() {
         return (
             <>
+            <DemoNav/>
             <header>
                 <h1>Master Bedroom</h1>
             </header>

@@ -1,11 +1,13 @@
 import React from 'react';
 import '../boardz.css'
+import DemoNav from '../DemoNav/DemoNav';
 
 
 class MudLaundry extends React.Component {
     render() {
         return (
             <>
+            <DemoNav/>
             <header>
                 <h1>Mud + Laundry</h1>
             </header>

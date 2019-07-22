@@ -1,11 +1,12 @@
 import React from 'react';
 import '../boardz.css'
-
+import DemoNav from '../DemoNav/DemoNav';
 
 class Office extends React.Component {
     render() {
         return (
             <>
+            <DemoNav/>
             <header>
                 <h1>Office</h1>
             </header>

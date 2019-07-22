@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import MainNav from './MainNav/MainNav'
 import HomePage from './HomePage/HomePage';
 import SignUp from './SignUp/SignUp';
 import Footer from './Footer/Footer';
@@ -25,7 +24,6 @@ class App extends React.Component {
   render() {
   return (
     <div className="App">
-      <MainNav/>
       <main>
       <Switch>
       <Route
