@@ -18,7 +18,8 @@ class LivingRoom extends React.Component {
                         <button class="button button5">+</button>
                          <dl>
                           <dt>Note:</dt>
-                            <dd>Lighting above the kitchen island</dd>
+                            <dd>Lighting above the couches</dd>
+                            <br/>
                             <dt>Link:</dt>
                             <dd><a href="https://bit.ly/2YYNPXJ" target="_blank" rel="noopener noreferrer">https://bit.ly/2YYNPXJ</a></dd>
                         </dl>
@@ -31,32 +32,38 @@ class LivingRoom extends React.Component {
               </ul>
               <ul>
                   <li>
-                      <h1> Board 3</h1>
-                      Content
+                  <img src="https://bit.ly/2OjchSP" alt="living-room"/>
+                    <p>Paint Sample</p>
+                   <button class="button button5">+</button>       
                   </li>
                   <li>
-                      <h1> Board 4</h1>
-                      Content
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                      <h1> Board 3</h1>
-                      Content
-                  </li>
-                  <li>
-                      <h1> Board 4</h1>
-                      Content
+                  <img src="https://bit.ly/30FiBFm" alt="living-room"/>
+                    <p>Flooring</p>
+                   <button class="button button5">+</button>   
                   </li>
               </ul>
               <ul>
                   <li>
-                      <h1> Board 3</h1>
-                      Content
+                  <img src="https://bit.ly/2YdKOWb" alt="living-room"/>
+                    <p>Fireplace</p>
+                   <button class="button button5">+</button>   
                   </li>
                   <li>
-                      <h1> Board 4</h1>
-                      Content
+                  <img src="https://bit.ly/2xX11jG" alt="living-room"/>
+                    <p>Paint Sample</p>
+                   <button class="button button5">+</button>   
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                    <img src="https://bit.ly/2Lw5djk" alt="living-room"/>
+                    <p>Decor</p>
+                   <button class="button button5">+</button>   
+                  </li>
+                  <li>
+                    <img src="https://bit.ly/2LtevNc" alt="living-room"/>
+                      <p>Furniture</p>
+                   <button class="button button5">+</button>   
                   </li>
               </ul>
             </div>
