@@ -41,7 +41,7 @@ class App extends React.Component {
         component={AddVision} />
 
      <Route
-        path="/room-selections"
+        path="/demo"
         component={RoomSelections} />
     <Route
         path="/living-room"

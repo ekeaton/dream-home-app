@@ -2,8 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './main-nav.css';
 
-class MainNav extends React.Component {
-    render() {
+function DemoNav() {
         return (
            <>
             <nav className="main-nav-container">
@@ -17,11 +16,12 @@ class MainNav extends React.Component {
           <div class="main-nav">
              <Link to="/signup" className="nav-link">Sign Up</Link>
              <Link to="/demo" className="nav-link">Demo</Link>
+             <Link to="/add-vision" className="nav-link">Add Vision</Link>
           </div>
         </nav>
        </>
         )
-    }
-}
+     }
 
-export default MainNav;
+
+export default DemoNav;
