@@ -4,6 +4,13 @@ import './add-vision.css'
 
 
 class AddVision extends React.Component {
+  uploadWidget() {
+    window.cloudinary.openUploadWidget({ cloud_name: 'stelle', upload_preset: 'zg2t73od', tags:['living-room']},
+        function(error, result) {
+            console.log(result);
+        });
+}
+
     render() {
         return (
             <>
@@ -13,11 +20,13 @@ class AddVision extends React.Component {
             </header>
              <section>
                <form id="add-vision">
-                <div class="form-section">
-                 <label for="upload-image">Upload image</label>
-                 <input type="file" name="pic" accept="image/*"/>
-              </div>
-              <div class="form-section">
+                <div className="upload">
+                 <label htmlFor="upload-image">Upload image</label>
+                 <button onClick={this.uploadWidget.bind(this)} className="upload-button">
+                        Add Image
+                    </button>       
+                </div>
+              <div className="form-section">
                 <label for="image-category">Category</label>
                 <select>
                   <option value="" selected>Select type</option>
@@ -31,7 +40,7 @@ class AddVision extends React.Component {
                      <option value="misc">Misc</option>
                 </select>
                 
-                 <label for="room-selection">Room</label>
+                 <label htmlFor="room-selection">Room</label>
                 <select>
                   <option value="" selected>Select Room</option>
                   <option value="living Room">Living Room</option>
@@ -43,9 +52,9 @@ class AddVision extends React.Component {
                     <option value="mud-laundry">Mud & Laundry</option>
                      <option value="Basement">Basement</option>
                 </select>
-                <label for="image-note">Note</label>
+                <label htmlFor="image-note">Note</label>
                 <textarea name="image-note" rows="8"></textarea>
-                <label for="image-link">Link</label>
+                <label htmlFor="image-link">Link</label>
                  <input type="url" name="image-link"/>
               </div>
              
