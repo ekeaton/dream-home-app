@@ -1,13 +1,22 @@
 import React from 'react';
 import '../boardz.css'
-import DemoNav from '../DemoNav/DemoNav';
+import ComingSoonNav from '../ComingSoonNav/ComingSoonNav';
 
 
 class Kitchen extends React.Component {
+  state = {
+    showList: false,
+  }
+
+  handleOpenClick = () => {
+    this.setState({
+      openList: true,
+    })
+  }
     render() {
         return (
             <>
-            <DemoNav/>
+            <ComingSoonNav/>
             <header>
                 <h1>Kitchen</h1>
             </header>
@@ -16,7 +25,8 @@ class Kitchen extends React.Component {
                   <li>
                      <img src="https://low.es/2XWzBdv" alt="kitchen"/>
                       <p>Counters</p>
-                        <button class="button button5">+</button>
+                      <button class="button button5" onClick={this.handleOpenClick}>+</button>
+                        {this.state.openList ? 
                          <dl>
                           <dt>Note:</dt>
                             <dd>Quartz counters</dd>
@@ -24,6 +34,7 @@ class Kitchen extends React.Component {
                             <dt>Link:</dt>
                             <dd><a href="https://www.lowes.com/pd/allen-roth-oyster-cotton-quartz-kitchen-countertop-sample/1000211293?cm_mmc=shp-_-c-_-prd-_-kab-_-google-_-pla-_-233-_-soscountertopproductandaccess-_-1000211293-_-0&kpid&gclsrc=aw.ds&&k_clickID=go_1725323025_66495468382_343129829412_pla-872927296512_c_9032940&gclid=EAIaIQobChMI5be37bm_4wIVNRh9Ch3IZgxoEAQYAyABEgKEbPD_BwE" target="_blank" rel="noopener noreferrer">https://low.es/2K2olT5</a></dd>
                         </dl>
+                        : false }
                   </li>
                   <li>
                   <img src="https://bit.ly/32xaY5L" alt="Kitchen"/>

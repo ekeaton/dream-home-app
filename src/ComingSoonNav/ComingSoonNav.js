@@ -18,6 +18,7 @@ function ComingSoonNav() {
              <div className="demo-nav">
                <Link to="/signup" className="demo-nav-link">Sign Up</Link>
                <Link to="/demo" className="demo-nav-link">Demo</Link>
+               <Link to="/room-selections" className="demo-nav-link">Coming Soon</Link>
              </div>
             </nav>
          )

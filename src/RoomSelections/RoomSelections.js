@@ -40,8 +40,8 @@ class RoomSelections extends React.Component {
                     </div>
                   </div>
 
-                 <div class="column">
-                   <div class="card">
+                 <div className="column">
+                   <div className="card">
                    <Link
                       className="bedroom-link"
                       to="/master-bedroom">
@@ -53,8 +53,8 @@ class RoomSelections extends React.Component {
                    </div>
                  </div>
 
-                 <div class="column">
-                  <div class="card">
+                 <div className="column">
+                  <div className="card">
                   <Link
                       className="bathroom-link"
                       to="/master-bathroom">
@@ -72,21 +72,21 @@ class RoomSelections extends React.Component {
                 <header>
                    <h2>Additional</h2>
                 </header>
-                <div class="row">
-                  <div class="column">
-                    <div class="card">
+                <div className="row">
+                  <div className="column">
+                    <div className="card">
                     <Link
                         className="office-link"
                          to="/office">
-                        <img src="https://i.imgur.com/Px5BVMu.jpg" alt="office" style={{width:325}}/>
+                        <img src="https://i.imgur.com/Px5BVMu.jpg" alt="office" style={{width:300}}/>
                         </Link> 
                         <div className="container">
                           <h4><b>Office</b></h4>
                         </div>
                     </div>
                   </div>
-                 <div class="column">
-                    <div class="card">
+                 <div className="column">
+                    <div className="card">
                     <Link
                         className="bonus-room-link"
                          to="/bonus-room">
@@ -97,8 +97,8 @@ class RoomSelections extends React.Component {
                         </div>
                     </div>
                  </div>
-                 <div class="column">
-                   <div class="card">
+                 <div className="column">
+                   <div className="card">
                    <Link
                       className="mud-laundry-link"
                       to="/mud-laundry-room">
@@ -109,8 +109,8 @@ class RoomSelections extends React.Component {
                         </div>
                    </div>
                 </div>
-                <div class="column">
-                  <div class="card">
+                <div className="column">
+                  <div className="card">
                   <Link
                      className="basement-link"
                      to="/basement">

@@ -1,10 +1,23 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import SignUpModal from '../SignUpModal/SignUpModal'
 import './demo-nav.css';
 
 
-function DemoNav() {
+class DemoNav extends React.Component {
+
+    state = {
+        showModal: false
+      }
+      handleOpenModal = () => {
+        this.setState({ showModal: true })
+      }
+      handleCloseModal = () => {
+        this.setState({ showModal: false })
+      }
+        render() {
         return (
+          <>
             <nav className="demo-nav-container">
               <div className="demo-logo-container">
                  <Link
@@ -16,13 +29,19 @@ function DemoNav() {
               </div>
 
              <div className="demo-nav">
-               <Link to="/signup" className="demo-nav-link">Sign Up</Link>
+               <Link to="#" className="demo-nav-link" onClick={this.handleOpenModal}>Sign Up</Link>
                <Link to="/demo" className="demo-nav-link">Demo</Link>
                <Link to="/floorplan-notes" className="demo-nav-link">Floorplan Notes</Link>
              </div>
             </nav>
+            <SignUpModal
+            isOpen={this.state.showModal}
+            onRequestClose={this.handleCloseModal}
+            handleCloseModal={this.handleCloseModal}
+          />
+        </>
          )
      }
-
+    }
 
 export default DemoNav;

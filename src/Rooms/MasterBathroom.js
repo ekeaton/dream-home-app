@@ -1,13 +1,22 @@
 import React from 'react';
 import '../boardz.css'
-import DemoNav from '../DemoNav/DemoNav';
+import ComingSoonNav from '../ComingSoonNav/ComingSoonNav';
 
 
 class MasterBathroom extends React.Component {
+  state = {
+    showList: false,
+  }
+
+  handleOpenClick = () => {
+    this.setState({
+      openList: true,
+    })
+  }
     render() {
         return (
             <>
-            <DemoNav/>
+            <ComingSoonNav/>
             <header>
                 <h1>Master Bathroom</h1>
             </header>
@@ -16,7 +25,8 @@ class MasterBathroom extends React.Component {
                   <li>
                      <img src="https://bit.ly/2Y8OfNL" alt="master-bathroom"/>
                       <p>Counters</p>
-                        <button class="button button5">+</button>
+                      <button class="button button5" onClick={this.handleOpenClick}>+</button>
+                        {this.state.openList ? 
                          <dl>
                           <dt>Note:</dt>
                             <dd>Concrete counters</dd>
@@ -24,6 +34,7 @@ class MasterBathroom extends React.Component {
                             <dt>Link:</dt>
                             <dd><a href="https://www.houseofrumours.com/diy-concrete-countertops/" target="_blank" rel="noopener noreferrer">https://www.houseofrumours.com/diy-concrete-countertops/</a></dd>
                         </dl>
+                        : false }
                   </li>
                   <li>
                   <img src="https://bit.ly/2M0saL8" alt="master-bathroom"/>

@@ -1,13 +1,22 @@
 import React from 'react';
 import '../boardz.css'
-import DemoNav from '../DemoNav/DemoNav';
+import ComingSoonNav from '../ComingSoonNav/ComingSoonNav'
 
 
 class MudLaundry extends React.Component {
+  state = {
+    showList: false,
+  }
+
+  handleOpenClick = () => {
+    this.setState({
+      openList: true,
+    })
+  }
     render() {
         return (
             <>
-            <DemoNav/>
+            <ComingSoonNav/>
             <header>
                 <h1>Mud + Laundry</h1>
             </header>
@@ -16,7 +25,8 @@ class MudLaundry extends React.Component {
                   <li>
                      <img src="https://bit.ly/2Z30Wa5" alt="mud-laundry"/>
                       <p>Appliances</p>
-                        <button class="button button5">+</button>
+                      <button class="button button5" onClick={this.handleOpenClick}>+</button>
+                        {this.state.openList ? 
                          <dl>
                           <dt>Note:</dt>
                             <dd>Side-by-Side on Pedestals Washer & Dryer Set</dd>
@@ -24,6 +34,7 @@ class MudLaundry extends React.Component {
                             <dt>Link:</dt>
                             <dd><a href="https://bit.ly/2JH4Znc" target="_blank" rel="noopener noreferrer">https://bit.ly/2JH4Znc</a></dd>
                         </dl>
+                        : false }
                   </li>
                   <li>
                   <img src="https://bit.ly/2JTieQT" alt="mud-laundry"/>

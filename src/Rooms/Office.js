@@ -1,12 +1,21 @@
 import React from 'react';
 import '../boardz.css'
-import DemoNav from '../DemoNav/DemoNav';
+import ComingSoonNav from '../ComingSoonNav/ComingSoonNav';
 
 class Office extends React.Component {
+  state = {
+    showList: false,
+  }
+
+  handleOpenClick = () => {
+    this.setState({
+      openList: true,
+    })
+  }
     render() {
         return (
             <>
-            <DemoNav/>
+            <ComingSoonNav/>
             <header>
                 <h1>Office</h1>
             </header>
@@ -15,7 +24,8 @@ class Office extends React.Component {
                   <li>
                      <img src="https://bit.ly/30Nq8C8" alt="office"/>
                       <p>Furniture</p>
-                        <button class="button button5">+</button>
+                      <button class="button button5" onClick={this.handleOpenClick}>+</button>
+                        {this.state.openList ? 
                          <dl>
                           <dt>Note:</dt>
                             <dd>Home office desk</dd>
@@ -23,6 +33,7 @@ class Office extends React.Component {
                             <dt>Link:</dt>
                             <dd><a href="https://bit.ly/2GnODhi" target="_blank" rel="noopener noreferrer">https://bit.ly/2GnODhi</a></dd>
                         </dl>
+                        : false } 
                   </li>
                   <li>
                   <img src="https://bit.ly/2M2VEYB" alt="office"/>

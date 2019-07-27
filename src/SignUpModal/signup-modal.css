@@ -42,12 +42,11 @@
 	padding: 10px 15px 10px 15px;
 	color: #FFF;
 	margin: 0 auto;
-	background: #1abc9c;
+  background-color: #3692d8;
 	font-size: 16px;
 	text-align: center;
 	font-style: normal;
 	width: 80px;
-  border: 1px solid #16a085;
   border-radius: 10%;
 	border-width: 1px 1px 3px;
   margin-bottom: 10px;
@@ -59,12 +58,11 @@
 	padding: 10px 10px;
 	color: #FFF;
 	margin: 0 auto;
-	background: #1abc9c;
+  background-color: #3692d8;
 	font-size: 15px;
 	text-align: center;
 	font-style: normal;
 	width: 150px;
-  border: 1px solid #16a085;
   border-radius: 10%;
 	border-width: 1px 1px 3px;
   margin-bottom: 10px;
@@ -89,11 +87,6 @@ input[type="email"] {
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 30px;
-}
-
-
-.beta-form__brand {
-    width: 10%;
 }
 
 .beta-form__text {

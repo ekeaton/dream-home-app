@@ -29,7 +29,6 @@ class SignUpModal extends React.Component {
         {this.state.formSubmitted ? 
           <div className="beta-form__container">
               <p className="beta-form__text u-margin-top-small u-margin-bottom-small">Thank you for signing up. We will notify you when your account is ready.</p> 
-              <img src="https://i.imgur.com/AUGtSqD.png" className="beta-form__brand u-margin-bottom-small" alt="blissful-brand"/>
           </div>
             : 
             <div className="beta-form__container">
