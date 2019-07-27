@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './room-sections.css'
-import DemoNav from '../DemoNav/DemoNav';
+import ComingSoonNav from '../ComingSoonNav/ComingSoonNav';
 
 
 class RoomSelections extends React.Component {
     render() {
         return (
             <>
-            <DemoNav/>
+            <ComingSoonNav/>
               <section>
                  <header>
                    <h2>Rooms</h2>
@@ -44,17 +44,11 @@ class RoomSelections extends React.Component {
                    <div class="card">
                    <Link
                       className="bedroom-link"
-                      to="/bedroom">
+                      to="/master-bedroom">
                         <img src="https://i.imgur.com/2hBRXBH.jpg" alt="bedroom" style={{width:300}}/>
                     </Link> 
                       <div className="container">
-                          <h4><b>Bedrooms</b></h4>
-                          <select>
-                            <option value="" selected>Select room</option>
-                            <option value="master-bedroom">Master</option>
-                           <option value="guest-bedroom">Guest</option>
-                           <option value="kids-bedroom">Kids</option>
-                        </select>
+                          <h4><b>Master Bedroom</b></h4>
                       </div>
                    </div>
                  </div>
@@ -63,17 +57,11 @@ class RoomSelections extends React.Component {
                   <div class="card">
                   <Link
                       className="bathroom-link"
-                      to="/bathroom">
+                      to="/master-bathroom">
                         <img src="https://i.imgur.com/Qw1vkDZ.jpg" alt="bathroom" style={{width:300}}/>
                     </Link> 
                       <div className="container">
-                          <h4><b>Bathrooms</b></h4>
-                          <select>
-                            <option value="" selected>Select room</option>
-                            <option value="master-bathroom">Master</option>
-                           <option value="guest-bathroom">Guest</option>
-                           <option value="kids-bathroom">Kids</option>
-                        </select>
+                          <h4><b>Master Bathroom</b></h4>
                       </div>
                   </div>
                 </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './demo-nav.css';
+import './coming-soon-nav.css';
 
 
-function DemoNav() {
+function ComingSoonNav() {
         return (
             <nav className="demo-nav-container">
               <div className="demo-logo-container">
@@ -18,11 +18,10 @@ function DemoNav() {
              <div className="demo-nav">
                <Link to="/signup" className="demo-nav-link">Sign Up</Link>
                <Link to="/demo" className="demo-nav-link">Demo</Link>
-               <Link to="/floorplan-notes" className="demo-nav-link">Floorplan Notes</Link>
              </div>
             </nav>
          )
      }
 
 
-export default DemoNav;
+export default ComingSoonNav;

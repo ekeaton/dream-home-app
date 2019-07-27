@@ -1,0 +1,43 @@
+.demo-nav-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1% 0;
+    height: 85px;
+}
+
+.dream-home-logo {
+    width: 150px; 
+}
+
+.demo-logo-container {
+  float: left;
+}
+
+.demo-nav {
+  float: right;
+  padding-top: 25px;
+}
+
+/* Style the links inside the navigation bar */
+.demo-nav-link {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+  .demo-logo-container {float: none;}
+  .dream-home-logo {
+    position: relative;
+    left: 10%;
+  }
+  .demo-nav {float: none;}
+  .demo-nav-container {position: none;} 
+}
+
+
+

@@ -1,16 +1,10 @@
 import React from 'react';
 import DemoNav from '../DemoNav/DemoNav';
-import './add-vision.css'
+import './add-vision.css';
 
 
 class AddVision extends React.Component {
-  uploadWidget() {
-    window.cloudinary.openUploadWidget({ cloud_name: 'stelle', upload_preset: 'zg2t73od', tags:['living-room']},
-        function(error, result) {
-            console.log(result);
-        });
-}
-
+  
     render() {
         return (
             <>
@@ -22,17 +16,15 @@ class AddVision extends React.Component {
                <form id="add-vision">
                 <div className="upload">
                  <label htmlFor="upload-image">Upload image</label>
-                 <button onClick={this.uploadWidget.bind(this)} className="upload-button">
-                        Add Image
-                    </button>       
+                 <input type="file" name="pic" accept="image/*"/> 
                 </div>
               <div className="form-section">
-                <label for="image-category">Category</label>
+                <label htmlFor="image-category">Category</label>
                 <select>
-                  <option value="" selected>Select type</option>
+                  <option value="">Select type</option>
                   <option value="paint">Paint color</option>
                   <option value="flooring">Flooring</option>
-                  <option value="Appliances">Applicances</option>
+                  <option value="Appliances">Appliances</option>
                   <option value="cabinets">Cabinets</option>
                    <option value="lighting">Lighting</option>
                     <option value="furniture">Furniture</option>
@@ -42,7 +34,7 @@ class AddVision extends React.Component {
                 
                  <label htmlFor="room-selection">Room</label>
                 <select>
-                  <option value="" selected>Select Room</option>
+                  <option value="">Select Room</option>
                   <option value="living Room">Living Room</option>
                   <option value="kitchen">Kitchen</option>
                   <option value="bedrooms">Bedrooms</option>
