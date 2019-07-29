@@ -15,7 +15,6 @@ class FloorplanNotes extends React.Component {
     static contextType = NoteContext;
     
       handleClickDelete = (id, e) => {
-        console.log(e)
         e.preventDefault();
       
     

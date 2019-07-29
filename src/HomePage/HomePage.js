@@ -23,7 +23,7 @@ function HomePage() {
         <div className=".col-6 w3-center">
           <img src="https://i.imgur.com/it9vrby.png" alt='notes-icon' className="icon"/>
           <h4>Notes</h4>
-         <p>Think you've found the perfect one or can't decide between your two favorite. Add a note and refer back to them at any time.</p>
+         <p>Think you've found the perfect one or can't decide between your two favorites. Add a note and refer back to them at any time.</p>
       </div>
       </div>
       </section>
