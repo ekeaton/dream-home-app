@@ -9,8 +9,13 @@ header {
   padding-bottom: 45px;
 }
 
-
-.App-link {
-  color: #61dafb;
+h2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 440px) {
+ header {
+   padding-top: 90px; 
+ }
+    
+}

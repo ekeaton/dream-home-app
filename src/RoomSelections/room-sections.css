@@ -2,10 +2,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
   /* Float four columns side by side */
   .column {
     float: left;
@@ -29,6 +25,15 @@
     padding: 16px;
     text-align: center;
     /*background-color: #f1f1f1;*/
+  }
+
+  .img-container img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .img-container:hover img {
+    opacity: 0.2;
   }
   
   /* Add some padding inside the card container */

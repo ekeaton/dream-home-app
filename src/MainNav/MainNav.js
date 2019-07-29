@@ -26,7 +26,7 @@ class MainNav extends React.Component {
             <img className="dream-home-logo-main" src="https://i.imgur.com/AUGtSqD.png" alt="dream-home logo"/>
              </Link>
   
-          <div class="main-nav">
+          <div className="main-nav">
              <Link to="#" className="nav-link" onClick={this.handleOpenModal}>Sign Up</Link>
              <Link to="/demo" className="nav-link">Demo</Link>
           </div>

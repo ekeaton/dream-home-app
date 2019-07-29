@@ -16,11 +16,13 @@ class RoomSelections extends React.Component {
                  <div className="row">
                   <div className="column">
                     <div className="card">
+                      <div className="img-container">
                         <Link
                             className="living-room-link"
                             to="/living-room">
-                        <img src="https://i.imgur.com/11moz3p.jpg" alt="living-room" style={{width:300}}/>
+                        <img src="https://i.imgur.com/11moz3p.jpg" alt="living-room"/>
                         </Link> 
+                        </div>
                         <div className="container">
                           <h4><b>Living Room</b></h4>
                         </div>
@@ -29,11 +31,13 @@ class RoomSelections extends React.Component {
 
                   <div className="column">
                     <div class="card">
+                     <div className="img-container">
                     <Link
                         className="kitchen-link"
                          to="/kitchen">
                         <img src="https://i.imgur.com/80cUoCD.jpg" alt="kitchen" style={{width:300}}/>
-                        </Link> 
+                        </Link>
+                        </div> 
                         <div className="container">
                           <h4><b>Kitchen</b></h4>
                         </div>
@@ -42,11 +46,13 @@ class RoomSelections extends React.Component {
 
                  <div className="column">
                    <div className="card">
-                   <Link
-                      className="bedroom-link"
-                      to="/master-bedroom">
+                    <div className="img-container">
+                      <Link
+                       className="bedroom-link"
+                       to="/master-bedroom">
                         <img src="https://i.imgur.com/2hBRXBH.jpg" alt="bedroom" style={{width:300}}/>
-                    </Link> 
+                       </Link>
+                      </div> 
                       <div className="container">
                           <h4><b>Master Bedroom</b></h4>
                       </div>
@@ -55,11 +61,13 @@ class RoomSelections extends React.Component {
 
                  <div className="column">
                   <div className="card">
-                  <Link
-                      className="bathroom-link"
-                      to="/master-bathroom">
+                    <div className="img-container">
+                      <Link
+                        className="bathroom-link"
+                        to="/master-bathroom">
                         <img src="https://i.imgur.com/Qw1vkDZ.jpg" alt="bathroom" style={{width:300}}/>
-                    </Link> 
+                       </Link> 
+                      </div>
                       <div className="container">
                           <h4><b>Master Bathroom</b></h4>
                       </div>
@@ -75,11 +83,13 @@ class RoomSelections extends React.Component {
                 <div className="row">
                   <div className="column">
                     <div className="card">
-                    <Link
-                        className="office-link"
+                      <div className="img-container">
+                        <Link
+                         className="office-link"
                          to="/office">
-                        <img src="https://i.imgur.com/Px5BVMu.jpg" alt="office" style={{width:300}}/>
-                        </Link> 
+                         <img src="https://i.imgur.com/Px5BVMu.jpg" alt="office" style={{width:300}}/>
+                         </Link> 
+                        </div>
                         <div className="container">
                           <h4><b>Office</b></h4>
                         </div>
@@ -87,11 +97,13 @@ class RoomSelections extends React.Component {
                   </div>
                  <div className="column">
                     <div className="card">
+                    <div className="img-container">
                     <Link
                         className="bonus-room-link"
                          to="/bonus-room">
-                        <img src="https://i.imgur.com/JHIJNwm.jpg" alt="bonus-room" style={{width:300}}/>
+                        <img src="https://i.imgur.com/JHIJNwm.jpg" alt="bonus-room"/>
                         </Link> 
+                        </div>
                         <div className="container">
                           <h4><b>Bonus Room</b></h4>
                         </div>
@@ -99,24 +111,28 @@ class RoomSelections extends React.Component {
                  </div>
                  <div className="column">
                    <div className="card">
-                   <Link
-                      className="mud-laundry-link"
-                      to="/mud-laundry-room">
+                     <div className="img-container">
+                      <Link
+                        className="mud-laundry-link"
+                        to="/mud-laundry-room">
                         <img src="https://i.imgur.com/a6xKJJ1.jpg" alt="mud-laundry-room" style={{width:300}}/>
-                        </Link> 
-                        <div className="container">
+                       </Link>
+                       </div> 
+                       <div className="container">
                           <h4><b>Mud + Laundry Room</b></h4>
                         </div>
                    </div>
                 </div>
                 <div className="column">
                   <div className="card">
-                  <Link
-                     className="basement-link"
-                     to="/basement">
+                    <div className="img-container">
+                      <Link
+                       className="basement-link"
+                        to="/basement">
                         <img src="https://i.imgur.com/BhGE49P.jpg" alt="basement" style={{width:300}}/>
-                        </Link> 
-                        <div className="container">
+                       </Link>
+                       </div> 
+                       <div className="container">
                           <h4><b>Basement</b></h4>
                         </div>
                   </div>

@@ -1,10 +1,11 @@
 import React from 'react'
+import './header.css'
 
 
 function Header() {
     return (
-        <header role="banner">
-           <h1>See it | Save it | All in one place</h1>
+        <header className="dream-container w3-blue w3-center">
+        <p className="w3-xlarge">See it | Save it | All in one place</p>
       </header>
     )
 }

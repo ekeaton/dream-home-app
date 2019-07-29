@@ -30,12 +30,17 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .demo-logo-container {float: none;}
+  .demo-logo-container {
+    float: none;
+    padding-right: 50px;
+  }
   .dream-home-logo {
     position: relative;
     left: 10%;
   }
-  .demo-nav {float: none;}
+  .demo-nav {
+    float: none;
+  }
   .demo-nav-container {position: none;} 
 }
 

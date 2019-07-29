@@ -76,37 +76,41 @@ class AddNote extends React.Component {
   
   render() {
     return (
-        <>
+      <>
         <DemoNav/>
-        <header>
-          <h1>Add Note</h1>
-        </header>
-        <section className="form-section">
-        <div className="form-style-5">
-        <form id="note-form"  className='note-form' onSubmit={this.noteSubmitHandle}>
-        <label htmlFor="name">House Plan Name:</label>
-           <input type="text" name="field1" required onChange={e => this.updateNoteName(e.target.value)}/>
+        <div className="form-style-10">
+           <h1>Create Note</h1>
+        <form onSubmit={this.noteSubmitHandle}>
+          <div className="section">House Plan</div>
+            <div className="inner-wrap">
+              <label htmlFor="name">Name<input type="text" name="field1" required onChange={e => this.updateNoteName(e.target.value)}/></label>
+            </div>
 
-         <div className="form-section">
-         <label htmlFor="number_bedrooms"># of Bedrooms</label>
-             <input type="number" min="1" max="10" required onChange={e => this.updateNoteBedrooms(e.target.value)}/>
+           <div className="section">Bedrooms</div>
+             <div className="inner-wrap">
+               <label htmlFor="number_bedrooms"># of rooms <input type="number" name="field3" required onChange={e => this.updateNoteBedrooms(e.target.value)}/></label>
+             </div>
 
-        <label htmlFor="number_bedrooms"># of Bathrooms</label>
-             <input type="number" min="1" max="10" required onChange={e => this.updateNoteBathrooms(e.target.value)}/>
-        
-        <label htmlFor="sq-ft">Sq Footage</label>
-            <input type="number" onChange={e => this.updateNoteSqft(e.target.value)}/>
+           <div className="section">Bathrooms</div>
+              <div className="inner-wrap">
+               <label htmlFor="number_bathrooms"># of bathrooms <input type="number" name="field5" required onChange={e => this.updateNoteBathrooms(e.target.value)} /></label>
+              </div>
 
+            <div className="section">Square ft</div>
+               <div className="inner-wrap">
+              <label htmlFor="sq-ft">Total<input type="number" name="field3" onChange={e => this.updateNoteSqft(e.target.value)}/></label>
+              </div>
 
-        <label htmlFor="note"><i>Note:</i></label>
-            <textarea name="field3" placeholder="Note" onChange={e => this.updateNoteNote(e.target.value)}></textarea>
-         </div>
-        <button type="submit" className="create-btn">Submit</button>
-        <button type="reset" className="res-btn">Reset</button>
-       </form>
-      </div>
-   </section>
-    </>
+           <div className="section"><i>Note:</i></div>
+             <div className="inner-wrap">
+            <label><textarea name="field3" onChange={e => this.updateNoteNote(e.target.value)}/></label>
+            </div>
+          <div className="button-section">
+            <input type="submit" name="create-note" />
+          </div>
+      </form>
+     </div>
+     </>
     )
 }
 }
