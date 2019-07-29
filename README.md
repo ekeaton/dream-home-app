@@ -15,21 +15,21 @@ Screenshots
 -----------
 
 ### *Home Page*
-
+----------------
 ![Landing page](https://i.imgur.com/hMWcdin.png)
 
 
 ### *Floorplan Demo Page*
-
+--------------------------
 ![Floorplan Demo](https://i.imgur.com/ugTKXAN.png)
 
 
 ### *Note Form*
-
+----------------
 ![Note Form](https://i.imgur.com/ecJtRI3.png)
 
 ### *Floorplan Notes*
-
+---------------------
 ![Floorplan Notes](https://i.imgur.com/Me7NcdD.png)
 
 
