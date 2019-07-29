@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DreamHome
 
-## Available Scripts
+Description
+-----------
+ DreamHome is for the dreamer, the builder and the visionary. Ideal for home builders and remodelers, DreamHome brings 
+ the most popular home plans to you and provides a convenient section to leave notes on your favorites. 
+ 
+Coming soon to DreamHome, virtual home vision boards at your fingertips. Each board is conveniently separated, allowing you to keep your images organized per room. Found the perfect flooring for your kitchen? Save it to your kitchen board, it's that easy. Ideal for anyone who wants to create a vision board of what their ideal dream home would look like.
+ 
+Live Demo
+----------
+* [Live Demo](https://dream-home-app.ekeaton.now.sh/)
 
-In the project directory, you can run:
+Screenshots
+-----------
 
-### `npm start`
+### *Home Page*
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Landing page](https://i.imgur.com/hMWcdin.png)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+### *Floorplan Demo Page*
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Floorplan Demo](https://i.imgur.com/ugTKXAN.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### *Note Form*
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![Note Form](https://i.imgur.com/ecJtRI3.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### *Floorplan Notes*
 
-### `npm run eject`
+![Floorplan Notes](https://i.imgur.com/Me7NcdD.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Coming Soon
+----------
+### *Room Selections*
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Rooms](https://i.imgur.com/JSt1pDF.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### *Example room vision board*
 
-## Learn More
+![Living Room](https://i.imgur.com/9LOiUYb.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Built With
+------------------
+### Front-end
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* HTML
+* CSS
+* React
 
-### Code Splitting
+### Back-end
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* PostgreSQL
+* Express
+* Node
+* Knex
 
-### Analyzing the Bundle Size
+### Testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* Mocha
+* Chai
+* Jest
+* Enzyme
 
-### Making a Progressive Web App
+### Features
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+* Create a note based on floorplans you love
+* See a complete list of all your floorplan notes
+* Add a new note
+* Remove note
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
