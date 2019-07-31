@@ -28,7 +28,7 @@
   .vision-image {
     padding-top: 40px;
     padding-bottom: 30px;
-    width: 550px;
+    width: 775px;
   }
 
   .vision-image:hover {
@@ -63,13 +63,20 @@
     [class*="col-"] {
         float: none;
       }
+    .col-6 {width:auto;}
       
   }
 
   @media (max-width: 600px) {
     .vision-image {
-        width: 250px;
+        width: 300px;
       }
+      .soon-section p {
+       width: 300px;
+       height: 250px;
+      }
+      
   }
 
+  
   
